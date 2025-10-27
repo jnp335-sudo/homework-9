@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+</head>
+<!---->
+<body>
+    <div class="container"></div>
+        <header class="Header">
+            <h1>Jared Palmer</h1>
+            <div id="greeting"></div>
+            <h3>I hope to one day be able to program my own game</h3>
+        </header>
+<!---->
+        <nav id="navbar">
+            <ul id="nav-list"></ul>
+            <a href="https://drive.google.com/uc?export=download&id=10v-mQtL_eTP6tsJzNunwOJMRnfDjFmYg" 
+                target="_blank" 
+                class="resume-btn" 
+                id="resume-download" 
+                onclick="trackDownload()"
+            >
+                Download Resume
+            </a>
+            <p id="download-count">Downloaded 0 times<p>
+        </nav>
+
+<!---->
+    <div class="content">
+        <div class="Others">
+            <section id="About_Myself">
+                <h2><u>About Myself</u></h2>
+                    <ul class="item">
+                        <li><h3><p>I am 19 years old. I have lived in Flagstaff all my life.</p></h3></li>
+                        <li><h3><p>I currently work and FlagTagAz. I've worked there for 3 years now.</p></h3></li>
+                        <li><h3><p>For fun I like to Read, watch Movies, and play Video Games. My favorite genre is Sci-Fi.</p></h3></li>
+                        <li><h3><p>I'm most familar with coding in python. I hope to be able to make my own websites for my future games from what I learn in this class.</p></h3></li>
+                        <li><h3><p>Currently, I am a sophmore at NAU studying Computer Science.</p></h3></li>
+                    </ul>
+            </section>
+        </div>
+<!---->
+        <section id="Skills">
+            <h2><u>Skills</u></h2>
+                <div class="Skills-section">
+                    <div class="Skill-catigory">
+                        <h3><p><u>Professional</u></p></h3>
+                        <ul type="disc">
+                            <li><h4><p>Crocheting scarfs</p></h4></li>
+                            <li><h4><p>Programming(still a beginner)</p></h4></li>
+                            <li><h4><p>Problem solving.</p></h4></li>
+                        </ul>
+                    </div>
+
+                    <div class="Skill-catigory">
+                        <h3><p><u>For Fun</u></p></h3>
+                        <ul type="circle">
+                            <li><h3><p>I am very good at memorizing stuff from
+                            <ul type="disc">
+                                <li><h4><p>Books</p></h4></li>
+                                <li><h4><p>Movies</p></h4></li>
+                                <li><h4><p>Video Games that I read, watch, or play.</p></h4></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="add-skill-form">
+                    <h3>Add a New Professional Skill</h3>
+                    <input type="text" id="new-professional-skill" placeholder="Enter a professional skill">
+                    <button id="add-professional-btn">Add Professional Skill</button>
+                    <p id="professional-skill-message" style="color: green;"></p>
+                </div>
+
+                <div class="add-skill-form">
+                    <h3>Add a New Fun Skill</h3>
+                    <input type="text" id="new-fun-skill" placeholder="Enter a fun skill">
+                    <button id="add-fun-btn">Add Fun Skill</button>
+                    <p id="fun-skill-message" style="color: green;"></p>
+                </div>
+
+                <!--skill add and edit-->
+                
+                <div id="jquery-skill-manager">
+                    <h3>User's Professional Skills</h3>
+                    <input type="text" id="pro-skill-input" placeholder="Enter a professional skill">
+                    <button id="pro-skill-btn">Add Skill</button>
+                    <ul id="pro-skill-list"></ul>
+
+                    <h3>User's For Fun Skills</h3>
+                    <input type="text" id="fun-skill-input" placeholder="Enter a fun skill">
+                    <button id="fun-skill-btn">Add Skill</button>
+                    <ul id="fun-skill-list"></ul>
+                </div>
+
+        </section>
+<!---->
+        <div class="Others">
+            <section id="Experience-Education">
+                <h2><u>Experience/Education</u></h2>
+
+                <div id="edu-exp-table-container"></div>
+            
+            </section>
+        </div>
+<!---->
+        <section id="Projects">
+            <div class="Projects-grid">
+                <h2 class="projects-title"><u>Projects</u></h2>
+                <div class="Projects-section">
+                    <ol>
+                        <li><h3><p>One of my projects was making over 100 scarfs using my crocheting skills.</p></h3></li>
+                        <ul>
+                            <li><h3><p>I filled 2 large boxes work of these scarfs to the brim.</p></h3></li>
+                    
+                            <picture>
+                                <img src="https://dananield.com/wp-content/uploads/2024/08/Learning-Crochet-Scarf-01-1.jpg" alt="Crochet Scarf" width = 300>
+                                <img src="https://i.ytimg.com/vi/EtTulvkWtkI/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCDWSFAFsJWSL9_GF_4VuK-gu3wPw" alt ="woman wearing crochet scarf" width ="450">
+                            </picture>
+                    
+                            <li><h3><p>I donated both boxes for those in need.</p></h3></li>
+                        </ul>
+                    </ol>
+                </div>    
+
+                    <div class="Projects-section">
+                        <ol start="2">
+                            <li><h3><p>My best project in that class was making a bedframe that has an Arduino.</p></h3></li>
+                
+                            <ul>
+                                <li><h3><p>Attached to the side that uses a Photoresister to determine the light in the room.</p></h3></li>
+
+                                <picture>
+                                    <img src="https://github.com/jnp335-sudo/homework-2-pics/blob/main/IMG_4066.jpeg?raw=true" alt ="Presenting the inerworking of the arduino circuit" style="margin-bottom: 20px;" width = 900>
+                                </picture>
+                    
+                                <li><h3><p>If the room gets too dark the Arduino activates an LED light strip attached to the bottom of the bed.</p></h3></li>
+                    
+                                <picture>
+                                    <img src="https://github.com/jnp335-sudo/homework-2-pics/blob/main/IMG_4086.jpeg?raw=true" alt ="Bed frame when light is on, LED light off" style="margin-bottom: 20px;" width = 900>
+                                    <img src="https://github.com/jnp335-sudo/homework-2-pics/blob/main/IMG_4085.jpeg?raw=true" alt ="Bed frame when light is off, LED light on" style="margin-bottom: 20px;" width = 900>
+                                </picture>
+                
+                            </ul>
+                        </ol>
+                    </div>
+
+                    <div class="Projects-section">
+                        <ol start="3">
+                            <li><h3><u>Ongoing Project</u></h3></li>
+                        </ol>
+                        <ul>
+                            <li><p>Deadline: <span id="project-deadline">2026-2-19</span></p></li>
+                            <li><p>Days remaining: <span id="days-remaining"></span></p></li>
+                        </ul>
+                    </div>
+
+                    <div class="Projects-section">
+                        <h3>Dynamic Projects</h3>
+                        <div id="project-list"></div>
+
+                        <div>
+                            <button id="sortAsc">Sort by Deadline ↑</button>
+                            <button id="sortDesc">Sort by Deadline ↓</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </div>
+<!---->
+    <footer class="Footer" id="Contact_Info">
+        <h2><u>Contact Info</u></h2>
+            <h3><a href="tel +19286074973">Phone: (928) 607 - 4973</a></h3>
+            <h3><a href="mailto:jnp335@nau.edu">Email: jnp335@nau.edu</a></h3>
+            <h3><a href="https://github.com/jnp335-sudo/communication">Github: jnp335-sudo</a></h3>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
